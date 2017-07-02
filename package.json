@@ -7,8 +7,10 @@
     "node": ">=7.6"
   },
   "scripts": {
+    "lint": "eslint index.js api/* test/*",
     "start": "node index.js",
-    "test": "istanbul cover --dir reports/coverage _mocha"
+    "test": "istanbul cover --dir reports/coverage _mocha",
+    "posttest": "npm run lint"
   },
   "keywords": [],
   "author": "Carl Hostetler",
@@ -18,6 +20,12 @@
     "koa": "^2.3.0"
   },
   "devDependencies": {
+    "eslint": "^4.1.1",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.6.1",
+    "eslint-plugin-node": "^5.1.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
     "istanbul": "^0.4.5",
     "mocha": "^3.4.2",
     "supertest": "^3.0.0"

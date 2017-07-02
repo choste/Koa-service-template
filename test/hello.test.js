@@ -5,17 +5,17 @@ const assert = require('assert')
 const Koa = require('koa')
 const request = require('supertest')
 
-const app = new Koa();
+const app = new Koa()
 
-describe('hello api', function() {
-  let server    
+describe('hello api', function () {
+  let server
 
-  before(function() {
+  before(function () {
     app.use(api)
     server = app.listen(3000)
   })
 
-  after(function() {
+  after(function () {
     server.close.bind(server)
   })
 
@@ -24,6 +24,6 @@ describe('hello api', function() {
       .get('/')
       .expect(200)
 
-    assert.equal(res.text, 'Hello World')  
+    assert.equal(res.text, 'Hello World')
   })
 })
