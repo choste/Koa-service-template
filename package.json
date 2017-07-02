@@ -1,15 +1,19 @@
 {
   "name": "terra",
   "version": "1.0.0",
-  "description": "",
+  "description": "Simple hello world app",
   "main": "index.js",
+  "engines": {
+    "node": ">=7.6"
+  },
   "scripts": {
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Carl Hostetler",
+  "license": "UNLICENSED",
+  "repository": "https://github.com/choste/terra.git",
   "dependencies": {
     "koa": "^2.3.0"
   }
