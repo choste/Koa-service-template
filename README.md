@@ -1,4 +1,4 @@
-# terra
+# Terra
 
 ## Description
 
@@ -15,6 +15,17 @@ npm i
 
 ## Run
 
+### Local server
+
 ```
 npm start
 ```
+
+this starts a local server hosted at [localhost:3000](http://localhost:3000/).
+
+### Test
+```
+npm test
+```
+
+this runs a set of endpoint test using mocha and supertest.

@@ -2,9 +2,8 @@
 
 const Koa = require('koa');
 const app = new Koa();
+const helloApi = require('./api/hello')
 
-app.use(ctx => {
-  ctx.body = 'Hello World'
-});
+app.use(helloApi);
 
 app.listen(3000);
