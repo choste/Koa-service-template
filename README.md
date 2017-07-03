@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/choste/Koa-service-template.svg?branch=master)](https://travis-ci.org/choste/Koa-service-template)
 # Terra
 
 ## Description
