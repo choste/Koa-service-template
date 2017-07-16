@@ -10,7 +10,8 @@
     "lint": "eslint index.js api/* test/*",
     "start": "node index.js",
     "test": "istanbul cover --dir reports/coverage _mocha",
-    "posttest": "npm run lint"
+    "posttest": "npm run lint",
+    "build": "docker build -t koa-app ."
   },
   "keywords": [],
   "author": "Carl Hostetler",

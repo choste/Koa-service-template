@@ -8,7 +8,7 @@ This project is a simple hello world app, built in node with [koa](http://koajs.
 
 ## Setup
 
-this project async and requires node 7.6 or greater.
+This project async and requires node 7.6 or greater.
 [nodejs](https://nodejs.org)
 
 ```
@@ -23,7 +23,21 @@ npm i
 npm start
 ```
 
-this starts a local server hosted at [localhost:3000](http://localhost:3000/).
+This starts a local server hosted at [localhost:3000](http://localhost:3000/).
+
+### Build
+
+```
+npm run build
+```
+
+This builds a docker container, copying the index.js, package.json and api folder. Runs a production install.
+
+```
+docker run -itp 3000:3000 --rm koa-app
+```
+
+This runs the newly created image, opens a tty connection and exposes port 3000 to the host machine. The --rm flag removes the container once the app is stopped.
 
 ### Test
 ```
